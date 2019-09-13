@@ -1,0 +1,286 @@
+/*
+Theme Name: Raumene Theme
+Author: Nicholas Giusti.
+Version: 1.0
+*/
+
+
+/* Reset styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    list-style: none;
+    box-sizing: border-box;
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+
+/* Colors */
+
+/*
+light-grey: #E6D9C6;
+dark-grey: #877971;
+Light green: #BCC19E;
+med green: #466B56;
+dark green: #244E47;
+
+*/
+
+
+/* font-family: 'Paytone One', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* Base Styles */
+
+body{
+    color:#ECE3D5;
+    background-color: #ECE3D5;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.body__inner {
+    width: 75%;
+    margin: 0 auto 6vw;;
+    padding: 5vw;
+    color:#244E47;
+    background-color: #ECE3D5;
+    position: relative;
+}
+
+h1{
+    font-size: 4vw;
+    font-weight: 900;
+    margin: 2vw 0;
+}
+
+h2 {
+    font-size: 3vw;
+    font-weight: 900;
+    margin: 2vw 0;
+}
+
+h3 {
+    font-size: 2.5vw;
+    font-weight: 900;
+    margin: 2vw 0;
+}
+
+h4 {
+    font-size: 2vw;
+    font-weight: 900;
+    margin: 2vw 0;
+}
+
+p {
+    font-size: 2vw;
+    margin: 1vw 0;
+}
+
+li {
+    font-size: 1.5vw;
+}
+
+blockquote {
+    font-style: italic;
+    font-family: 'Paytone One', sans-serif;
+}
+
+cite {
+    font-size: 2vw;
+}
+
+hr {
+    height: 0.5vw;
+    background-color: #244E47;
+}
+
+img {
+    margin: 2vw 0;
+    border: 0.5vw solid #244E47;
+}
+
+.cursive {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.font-large {
+    text-align: center;
+    font-size: 5vw;
+}
+
+.header__banner {
+    width:100%;
+    height: 50vw;
+    background: no-repeat center /cover;
+    text-shadow: 2px 2px 2px black;
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    position: relative;
+}
+
+.header__banner--color{
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(36,78,71, 0.5) 0%, rgba(101,131,126, 0.6) 100%);
+    width: 100%;
+    height: 100%;
+    content: '';
+}
+
+.page-title{
+    text-align: center;
+    margin: 2vw 0px 4vw;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 3vw;
+}
+
+.menu-item {
+    list-style: none;
+    transition: all 0.5s;
+    margin: 2vw 1vw;
+    font-size: 1.5vw;
+}
+
+.menu-item:hover {
+    color: #244E47;
+}
+
+.main__nav {
+    position: relative;
+}
+
+.header__copy-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 10vw 8vw 4vw;
+}
+
+.header__copy {
+    font-size: 4.5vw;
+    font-weight: 900;
+}
+
+.header__sub-copy {
+    font-size: 2.5vw;
+    margin: 2vw;
+}
+
+
+/* blog */
+.blog-title {
+    margin: 2vw 0px 4vw;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.blog-header {
+    font-weight: 900;
+}
+
+.blog-content {
+    font-size: 2vw;
+}
+
+.meta-box {
+    background-color: #ECE3D5;
+    padding: 0.5vw 1vw;
+    display: inline-block;
+    margin: 1vw 0;
+    border: solid 2px #244E47;
+    transition: all 0.5s;
+    margin: 3vw 0;
+}
+
+.meta-box:hover{
+    background-color: #244E47;
+    color: #ECE3D5;
+}
+
+.blog-button {
+    font-size: 2.5vw;
+}
+
+.blog-header {
+    font-size: 3vw;
+    margin: 2vw 0;
+}
+
+.blog-header--single {
+    font-size: 5vw;
+    text-align: center;
+    margin: 0vw 0 4vw;
+}
+
+.blog-content--single {
+    
+}
+
+.blog-content--single > p {
+    margin: 2vw 0;
+}
+
+
+/* footer */
+
+.footer__wrap {
+    background-color: #244E47;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    border-top: solid #466B56 10px;
+    padding: 6vw 3vw;
+    align-items: center;
+    box-shadow: 0 50vh 0px 50vh #244E47;
+}
+
+.footer__content {
+    width: 33%;
+}
+
+.footer__content-name {
+    font-size: 2vw;
+}
+
+.footer__content-dev {
+    font-size: 2vw;
+}
+
+.footer__content-social-wrap {
+    font-size: 3vw;
+}
+
+.footer__content-social-icon {
+    margin: 2vw;
+    transition: 0.5s all;
+}
+
+.footer__content-social-icon:hover {
+    color: #466B56;
+}
